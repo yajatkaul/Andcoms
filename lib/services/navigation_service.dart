@@ -2,6 +2,7 @@ import 'package:chatapp/pages/home_page.dart';
 import 'package:chatapp/pages/login_page.dart';
 import 'package:chatapp/pages/register_page.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class NavigationService {
@@ -27,6 +28,10 @@ class NavigationService {
 
   void pushNamed(String routeName) {
     _navigatorKey.currentState?.pushNamed(routeName);
+  }
+
+  void push(MaterialPageRoute route) {
+    _navigatorKey.currentState?.push(route);
   }
 
   void pushReplacementNamed(String routeName) {
