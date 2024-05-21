@@ -5,7 +5,7 @@ import 'package:path/path.dart' as p;
 
 class StorageService {
   final FirebaseStorage _firebaseStorage = FirebaseStorage.instance;
-  StorageService() {}
+  StorageService();
 
   Future<String?> uploadUserPfp({
     required File file,
@@ -19,6 +19,7 @@ class StorageService {
       if (p.state == TaskState.success) {
         return fileRef.getDownloadURL();
       }
+      return null;
     });
   }
 
@@ -32,6 +33,7 @@ class StorageService {
       if (p.state == TaskState.success) {
         return fileRef.getDownloadURL();
       }
+      return null;
     });
   }
 }

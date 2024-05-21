@@ -1,11 +1,8 @@
-import 'package:chatapp/pages/login_page.dart';
 import 'package:chatapp/services/auth_service.dart';
 import 'package:chatapp/services/navigation_service.dart';
 import 'package:chatapp/utils.dart';
-import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 void main() async {
   await setup();
@@ -18,6 +15,7 @@ Future<void> setup() async {
   await registerServices();
 }
 
+// ignore: must_be_immutable
 class MyApp extends StatelessWidget {
   final GetIt _getIt = GetIt.instance;
 

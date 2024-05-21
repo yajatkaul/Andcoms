@@ -10,9 +10,7 @@ import 'package:chatapp/services/storage_service.dart';
 import 'package:chatapp/utils.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dash_chat_2/dash_chat_2.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get_it/get_it.dart';
 
 class ChatPage extends StatefulWidget {

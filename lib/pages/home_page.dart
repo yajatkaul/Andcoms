@@ -5,9 +5,7 @@ import 'package:chatapp/services/auth_service.dart';
 import 'package:chatapp/services/database_service.dart';
 import 'package:chatapp/services/navigation_service.dart';
 import 'package:chatapp/widgets/chat_tile.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get_it/get_it.dart';
 
 class HomePage extends StatefulWidget {
